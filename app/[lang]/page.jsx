@@ -4,6 +4,12 @@ import { FileUser, Phone } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
+export const metadata = {
+  title: "iderkaoui mustapha",
+  description: "full-stack developer | iderkaoui mustapha"
+};
+
+
 export default async function Home({ params }) {
   const { lang } = await params;
   const dict = GetTrans(lang);

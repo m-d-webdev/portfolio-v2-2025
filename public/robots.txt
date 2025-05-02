@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://iderkaoui.site
+
+# Sitemaps
+Sitemap: https://iderkaoui.site/sitemap.xml

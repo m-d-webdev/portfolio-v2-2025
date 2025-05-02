@@ -1,5 +1,9 @@
 import { GetTrans } from "@/lib/server-i18n";
 
+export const metadata = {
+    title: "iderkaoui mustapha",
+    description: "full-stack developer | iderkaoui mustapha"
+};
 const page = ({ params }) => {
     const { lang } = params;
     const t = GetTrans(lang);
@@ -10,7 +14,7 @@ const page = ({ params }) => {
                 t.EXPERINCE &&
                 <>
                     <div className="flex w-full max-w-[1100px] pb-10 p-4 flex-col gap-4 pl-2 border-l-2 pl-10">
-                        <h1 className="text-3xl font-semibold tracking-tighter">{t.EXPERINCE.title} <span><a  href="https://www.developpeur-informatique.ma/" className="text-blue-800 pl-1">Développeur-informatique.ma</a></span></h1>
+                        <h1 className="text-3xl font-semibold tracking-tighter">{t.EXPERINCE.title} <span><a href="https://www.developpeur-informatique.ma/" className="text-blue-800 pl-1">Développeur-informatique.ma</a></span></h1>
                         <h2 className="text-xl font-medium mt-4 max-w-[1000px]">{t.EXPERINCE.introduction}</h2>
                         <ul className="flex-col pl-10 list-decimal  mt-5  flex gap-3">
                             {
