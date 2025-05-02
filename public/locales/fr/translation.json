@@ -1,0 +1,100 @@
+{
+    "LINKS": {
+      "HOME": "Accueil",
+      "EXPERINCE": "Expérience",
+      "WORKS": "Projets",
+      "ME": "À propos de moi",
+      "CONTACT": "Contact",
+      "EDUCATION": "Éducation",
+      "COMMENTS": "Témoignages",
+      "GAME": "Terrain de jeu"
+    },
+   "HOME":{
+    "name": "Mustapha Iderkaoui",
+    "title": "Développeur full-stack",
+    "highlight": "Évolutif. Moderne. Maintenable. Je transforme les idées en code propre et flexible — et j’aime chaque partie du processus.",
+    "about_1": "Je me concentre sur la création de sites web évolutifs et axés sur la performance qui offrent une excellente expérience utilisateur. J’utilise des technologies comme React pour le développement frontend moderne et Node.js pour construire des systèmes backend fiables. Un code propre, accessible et maintenable est toujours au cœur de mes réalisations.",
+    "about_2": "Je prête également attention aux fondamentaux du SEO — et je sais comment organiser les projets Next.js pour une meilleure visibilité, structure et performance sur les moteurs de recherche.",
+    "location": "Basé à Agadir, Maroc · Plus de 2 ans d’apprentissage autodidacte et académique en développement full-stack."
+  },
+  "BUTTONS":{
+    "home": "Accueil",
+    "about": "À propos de moi",
+    "projects": "Projets",
+    "skills": "Compétences",
+    "contact": "Contact",
+    "download_cv": "Télécharger le CV",
+    "hire_me": "Engagez-moi",
+    "view_more": "Voir plus",
+    "back_to_top": "Haut de page",
+    "send_message": "Envoyer le message",
+    "get_in_touch": "Entrer en contact",
+    "download_resume": "Télécharger le résumé",
+    "view_portfolio": "Voir le portfolio",
+    "lets_collaborate": "Collaborons ensemble",
+    "schedule_call": "Planifier un appel",
+    "subscribe_newsletter": "S'abonner à la newsletter",
+    "read_blog": "Lire mon blog",
+    "follow_me": "Suivez-moi",
+    "testimonials": "Voir les témoignages",
+    "expore_projects":"Découvrez mes projets"
+
+  },
+  "EXPERINCE":{
+    "introduction": "Lors de ma première expérience de stage chez Développeur-informatique.ma, j'ai acquis des compétences et des connaissances précieuses qui ont façonné mon approche du développement. Voici quelques points clés :"
+,
+    "title": "Ma Première Expérience de Stage chez ",
+    "sections": [
+        {
+            "subtitle": "Git & Contrôle de Version",
+            "content": "Expérience pratique de gestion des dépôts, gestion des fusions et résolution de conflits de code."
+        },
+        {
+            "subtitle": "Collaboration en Équipe",
+            "content": "Appris l’importance du travail en équipe, du partage d’idées et d’une communication fluide."
+        },
+        {
+            "subtitle": "Sécurité du Site Web",
+            "content": "Contribué à améliorer la sécurité du site web pour une meilleure expérience utilisateur."
+        },
+        {
+            "subtitle": "Optimisation du Code",
+            "content": "Focalisé sur la création d’un code évolutif, efficace, tout en simplifiant et en améliorant les performances."
+        },
+        {
+            "subtitle": "Amélioration de la Langue Française",
+            "content": "Amélioration de ma communication dans un environnement de travail bilingue."
+        },
+        {
+            "subtitle": "Résolution de Problèmes & Professionnalisme",
+            "content": "Développement de solides compétences en résolution de problèmes et maintien du professionnalisme en entreprise."
+        }
+       
+    ],
+    "CONCLUSION":  {
+      "subtitle": "Conclusion",
+      "content": "Ce stage m’a offert une base solide en développement web, travail d’équipe et professionnalisme, sur laquelle je continue à construire ma carrière."
+  }
+},
+"EXPER2":{
+  "title": "Expérience Freelance - Projet E-commerce",
+  "introduction": "J'ai rejoint une équipe freelance en ligne pour développer un site e-commerce pour un magasin spécialisé dans les téléphones et l'électronique. Ce projet à distance m'a permis de travailler à la fois sur le développement et le design de l'interface utilisateur, en utilisant Figma pour créer des interfaces claires et conviviales, en accord avec l'identité de la marque du client. Grâce à cette expérience, j'ai amélioré ma gestion du temps, participé à des réunions régulières, livré les tâches à temps et communiqué directement avec le client pour répondre efficacement et professionnellement à ses besoins.",
+  "key_takeaways_title": "Points Clés",
+  "key_takeaways": [
+      "Expérience acquise dans le travail à distance en équipe freelance.",
+      "Apprentissage de la gestion des réunions et du respect des délais.",
+      "Livraison des tâches de manière efficace tout en maintenant la qualité.",
+      "Communication directe avec les clients pour comprendre leurs besoins et retours.",
+      "Contribution à la conception UI/UX avec Figma, améliorant l’interface et l’expérience utilisateur.",
+      "Amélioration de l'autodiscipline et de la responsabilité dans un cadre de travail à distance."
+  ]
+},
+"EXPER3":{
+  "title": "Engagement Personnel envers la Croissance",
+  "introduction": "Au cours des deux dernières années à l’ISTA Agadir, j'ai adopté une approche proactive pour me développer en tant que développeur full-stack. Bien que ma formation académique m’ait fourni une base, j’ai rapidement compris que la véritable maîtrise exigeait un engagement quotidien au-delà des cours.",
+  "body": "Chaque jour, je me suis investi dans un apprentissage autonome : exploration de nouvelles technologies, création de projets, et approfondissement de mes connaissances en développement front-end et back-end. Cet effort constant a renforcé mes compétences techniques et cultivé un état d’esprit d’amélioration continue et d’adaptabilité."
+}
+  
+
+  }
+  
