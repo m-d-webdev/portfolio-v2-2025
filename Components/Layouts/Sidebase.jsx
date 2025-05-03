@@ -30,7 +30,6 @@ const getScaleFromValue = (val) => {
 const ALink = ({ l, MousePosi, active }) => {
     const { i18n } = useTranslation()
     const thisElemRef = useRef();
-
     const thisElemPosi = useMemo(() => {
         if (thisElemRef.current) {
             const rect = thisElemRef.current.getBoundingClientRect();
@@ -40,6 +39,8 @@ const ALink = ({ l, MousePosi, active }) => {
         return 1;
     }, [MousePosi]);
 
+
+
     return <Link
 
         ref={thisElemRef}
@@ -47,7 +48,7 @@ const ALink = ({ l, MousePosi, active }) => {
             opacity: (thisElemPosi / 2) + .2,
             width: `${thisElemPosi * 50}px`,
             height: `${thisElemPosi * 50}px`,
-            transform: `translateX(${thisElemPosi * 10 > 11 ? thisElemPosi * 10 : 0}px)`
+            left: `translateX(${thisElemPosi * 10 > 11 ? thisElemPosi * 10 : 0}px)`
         }}
         key={l.key}
         className={`${active
@@ -124,7 +125,7 @@ const Sidebase = () => {
             <div
                 onMouseMove={HnadelMouseMove}
                 onMouseLeave={() => setMousePosi(0)}
-                className='bg-background duration-200 max-w-[70px] border-4 border-secondary rounded-4xl     p-2 py-5 gap-3 flex flex-col justify-center items-center '>
+                className='bg-background   duration-200 max-w-[70px] border-4 border-secondary rounded-4xl     p-2 py-5 gap-3 flex flex-col justify-center items-center '>
                 {
                     links.map(
                         l => <ALink active={currentPahtName == l.href} MousePosi={MousePosi} l={l} key={l.key} />
