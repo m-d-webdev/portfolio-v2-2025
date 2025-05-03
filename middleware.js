@@ -12,6 +12,7 @@ export function middleware(request) {
     || pathname.startsWith("/locales")
     || pathname.startsWith("/icones")
     || pathname.startsWith("/sitemap.xml")
+    || pathname.startsWith("/robots.txt")
   if (isStatic) return NextResponse.next();
 
 
