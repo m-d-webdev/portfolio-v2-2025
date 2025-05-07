@@ -27,7 +27,7 @@ const page = async ({ params }) => {
     return (
         <>
             {projects &&
-                projects.data.map(
+                projects?.data?.map(
                     (p, i) => <div key={i} className={` py-10 flex items-start relative justify-between  px-3`}>
                         <ProjectYear lang={lang} year={"2024"} />
                         <div className={`${lang == "ar" ? "pr-6 border-r-2  mr-5 " : "pl-6 border-l  "} flex  border-border  flex-col max-w-[75%]   gap-2`}>
