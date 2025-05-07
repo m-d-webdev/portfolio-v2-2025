@@ -1,3 +1,4 @@
+import PageUnderCond from "@/Components/Client/PageUnderCond";
 
 export const metadata = {
   title: "iderkaoui mustapha",
@@ -6,9 +7,7 @@ export const metadata = {
 
 const page = () => {
   return (
-    <div>
-       me
-    </div>
+    <PageUnderCond />
   )
 }
 

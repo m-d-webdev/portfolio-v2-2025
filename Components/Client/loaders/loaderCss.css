@@ -1,0 +1,55 @@
+.loader {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    background: var(--gray2);
+    box-sizing: border-box;
+    border-radius: 10px;
+
+}
+
+/* :root {
+    -
+} */
+
+.loaders-san {
+    content: '';
+    width: 60px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: linear-gradient(90deg, transparent, rgba(240, 16, 16, 0.986) 50%, transparent 100%);
+    /* background-color: #fff; */
+    /* background-repeat: no-repeat; */
+    /* background-size: 75px 175px, 100% 100px, 100% 16px, 100% 30px; */
+    /* background-position: 0 0, center 0, center 115px, center 142px; */
+    /* box-sizing: border-box; */
+    /* background: #ffffff; */
+    /* background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.685) 50%, rgba(255, 255, 255, 0) 100%); */
+
+
+
+
+
+
+
+
+
+
+    animation: animloader cubic-bezier(0.215, 0.610, 0.355, 1) 3s infinite;
+
+
+
+}
+
+@keyframes animloader {
+    0% {
+        left: -100%;
+
+    }
+
+    100% {
+        left: 100%;
+    }
+}

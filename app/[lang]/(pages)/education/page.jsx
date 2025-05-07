@@ -1,3 +1,4 @@
+import PageUnderCond from "@/Components/Client/PageUnderCond";
 
 
 export const metadata = {
@@ -7,9 +8,8 @@ export const metadata = {
 
 const page = () => {
     return (
-        <div>
-            education
-        </div>
+        <PageUnderCond />
+
     )
 }
 

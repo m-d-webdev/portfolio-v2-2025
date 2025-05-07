@@ -93,8 +93,25 @@
   "title": "Engagement Personnel envers la Croissance",
   "introduction": "Au cours des deux dernières années à l’ISTA Agadir, j'ai adopté une approche proactive pour me développer en tant que développeur full-stack. Bien que ma formation académique m’ait fourni une base, j’ai rapidement compris que la véritable maîtrise exigeait un engagement quotidien au-delà des cours.",
   "body": "Chaque jour, je me suis investi dans un apprentissage autonome : exploration de nouvelles technologies, création de projets, et approfondissement de mes connaissances en développement front-end et back-end. Cet effort constant a renforcé mes compétences techniques et cultivé un état d’esprit d’amélioration continue et d’adaptabilité."
+},
+"ERRORS": {
+  "PAGE_UNDER_CONSTRUCTURE": "Bientôt disponible | Je construis quelque chose d'incroyable",
+  "PAGE_UNDER_CONSTRUCTURE2": "Je travaille actuellement sur cette page pour l'améliorer. Revenez bientôt pour voir les nouveautés !"
+}
+
+,
+"PROJECTS":{
+  "PROBELM":"Le problème",
+  "SOLUTION":"la solution",
+  "KEYAWAYS":"Enseignements",
+  "TECHUSED":"Technologies utilisées",
+  "CHANLLANGES":"défis"
+
+
+
+
 }
   
 
-  }
+ }
   

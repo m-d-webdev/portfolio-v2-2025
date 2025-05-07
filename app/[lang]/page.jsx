@@ -1,7 +1,7 @@
+// import Developer from "@/Components/lotties/Developer";
 import { Button } from "@/Components/ui/button";
 import { GetTrans } from "@/lib/server-i18n";
 import { FileUser, Phone } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
@@ -16,10 +16,13 @@ export default async function Home({ params }) {
 
   return (
     <div className="  w-full   h-full flex items-center justify-center">
-      <div className="w-full   h-full max-w-[1200px]">
+      <div className="w-full   justify-center flex flex-col items-center  h-full max-w-[1200px]">
         <div className="flex flex-col items-center pt-10  w-full">
-          <h1 className="text-7xl font-secondary  text-center font-extrabold tracking-[-5px]">{dict?.HOME?.name}</h1>
-          <h2 className="mt-8 text-center text-2xl  font-bold tracking-tighter opacity-60">{dict?.HOME?.title}</h2>
+          <div className="relative">
+            <h1 className="text-7xl MyName font-secondary  text-center font-extrabold tracking-[-5px]">{dict?.HOME?.name}</h1>
+            <span className="absolute bg-gradient-to-t from-background to-transparent h-[40px] bottom-0 left-0 w-full"></span>
+          </div>
+          <h2 className="mt-8  text-center text-2xl  font-bold tracking-tighter opacity-60">{dict?.HOME?.title}</h2>
           <h1 className="text-2xl max-w-[1000px] text-center font-medium mt-10 tracking-[-1px]">{dict?.HOME?.highlight}</h1>
           <ul className="mt-14 max-w-[800px]  ">
             <li><p className="text-center tracking-tight ">{dict?.HOME?.about_1}</p></li>
@@ -27,12 +30,18 @@ export default async function Home({ params }) {
             <li><p className="text-center mt-10 font-medium text-lg tracking-tight ">{dict?.HOME?.location}</p></li>
           </ul>
         </div>
-        <div className="w-full  p-4 pl-10 justify-end mt-20 gap-4 flex items-center">
-          <Button>
+
+        {/* <div className="w-full  p-4  justify-between mt-20 gap-4 flex items-end"> */}
+        {/* <Developer /> */}
+        <div className=" p-4 mt-15  justify-center  gap-4 flex items-center">
+          <Button
+            size={"lg"}
+          >
 
             <a
               className="flex gap-1"
-              href={"/"}
+              download={"Iderkaoui mustapha | full stack developer"}
+              href={"/media/Iderkaoui-mustapha-cv_v1.pdf"}
             >
               {
                 dict?.BUTTONS?.download_cv
@@ -41,6 +50,7 @@ export default async function Home({ params }) {
             </a>
           </Button>
           <Button
+            size={"lg"}
 
           >
 
@@ -55,6 +65,7 @@ export default async function Home({ params }) {
             </Link>
           </Button>
           <Button
+            size={"lg"}
             variant={"default"}
           >
 
@@ -69,6 +80,7 @@ export default async function Home({ params }) {
             </Link>
           </Button>
         </div>
+        {/* </div> */}
       </div>
     </div>
   );

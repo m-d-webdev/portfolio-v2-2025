@@ -53,7 +53,7 @@ const ButtonLang = () => {
                         exit={FramerMotion_Utils.down.exit}
                         animate={FramerMotion_Utils.down.anim}
 
-                        className="absolute flex   w-[150px] flex-col not-last: gap-1 top-6  p-4 rounded-xl bg-primary-foreground drop-shadow-xl">
+                        className="absolute flex  !z-10  w-[150px] flex-col not-last: gap-1 top-6  p-4 rounded-xl bg-primary-foreground drop-shadow-xl">
                         {
                             locales.map(l =>
                                 <Link

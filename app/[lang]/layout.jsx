@@ -1,4 +1,4 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Vazirmatn } from "next/font/google";
 import "./globals.css";
 import Header from "@/Components/Layouts/Header";
 import Sidebase from "@/Components/Layouts/Sidebase";
@@ -9,9 +9,9 @@ const geistSans = Geist({
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const vazirmatn = Vazirmatn({
+  subsets: ["arabic"],
+  weight: ["500"]
 });
 
 export const metadata = {
@@ -19,34 +19,19 @@ export const metadata = {
   description: "full-stack developer | iderkaoui mustapha"
 };
 
-export default function RootLayout({ children, params }) {
-  const { lang } = params
+export default async function RootLayout({ children, params }) {
+  const { lang } = await params
   return (
 
     <html lang="en">
-
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Gulzar&display=swap" rel="stylesheet" />
-      </head>
-      <body
-        style={
-          lang == 'ar'
-            ? {
-              fontFamily: '"Gulzar", serif',
-              fontWeight: 400
-            }
-            : {}}
-        className={` ${lang != 'ar' && geistSans.className} `}
-      >
+      <body className={` ${lang == 'ar' ? vazirmatn.className : geistSans.className} selection:bg-foreground  selection:text-background`}      >
         {/* For the client side , i have  another function for the server side */}
         <I18Provider>
           {/* ------------ */}
           <Header />
           <div className="w-full  flex justify-start items-start h-[90vh] gap-3">
             <Sidebase />
-            <main className="max-h-full w-full h-full overflow-auto">
+            <main className="max-h-full w-full h-full overflow-auto   flex flex-col items-center">
               {children}
             </main>
           </div>

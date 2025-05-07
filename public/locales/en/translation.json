@@ -91,9 +91,20 @@
   "title": "Personal Commitment to Growth",
   "introduction": "Over the past two years at ISTA Agadir, I've taken a proactive approach to my development as a full-stack developer. While my formal education provided a foundation, I recognized early on that true mastery required daily dedication beyond the classroom.",
   "body": "Each day, I engaged in self-directed learning—exploring new technologies, building projects, and deepening my understanding of both front-end and back-end development. This consistent effort has not only enhanced my technical skills but also fostered a mindset of continuous improvement and adaptability."
+},
+"ERRORS":{
+  "PAGE_UNDER_CONSTRUCTURE":"Coming Soon | I'm Building Something Awesome",
+  "PAGE_UNDER_CONSTRUCTURE2":"I'm currently working on this page to make it better. Check back soon for updates!"
 }
-    
-    
+    ,
+    "PROJECTS":{
+      "PROBELM":"The problem",
+      "SOLUTION":"the solution",
+      "KEYAWAYS":"takeaways",
+      "TECHUSED":"Technologies used",
+      "CHANLLANGES":"challanges"
+
+    }
   }
 
   
