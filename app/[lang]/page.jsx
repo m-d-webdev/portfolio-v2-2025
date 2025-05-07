@@ -4,11 +4,19 @@ import { GetTrans } from "@/lib/server-i18n";
 import { FileUser, Phone } from "lucide-react";
 import Link from "next/link";
 
-export const metadata = {
-  title: "iderkaoui mustapha",
-  description: "full-stack developer | iderkaoui mustapha"
-};
-
+export const generateMetadata = async ({ params }) => {
+  const { lang } = await params
+  const dict = GetTrans(lang);
+  return {
+    title: dict?.SEO.HOME.TITLE,
+    description: dict?.SEO.HOME.DESCRIPTION,
+    openGraph: {
+      title: dict?.SEO.HOME.TITLE,
+      description: dict?.SEO.HOME.DESCRIPTION,
+      images: ['/media/iderkaoui-mustapha.jpg']
+    }
+  }
+}
 
 export default async function Home({ params }) {
   const { lang } = await params;

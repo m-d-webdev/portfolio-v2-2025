@@ -110,6 +110,20 @@
 
 
 
+},
+"SEO":{
+  "HOME":{
+    "TITLE":"iderkaoui mustpaha",
+    "DESCRIPTION":"développeur full stack - iderkaoui mustapha"
+  },
+  "EXPERINCE":{
+    "TITLE":"Expériences",
+    "DESCRIPTION":"Les expériences de Mustapha Iderkaoui"
+  },
+  "PROJECTS":{
+    "TITLE":"Projets",
+    "DESCRIPTION":"Projets réalisés par Mustapha Iderkaoui"
+  }
 }
   
 

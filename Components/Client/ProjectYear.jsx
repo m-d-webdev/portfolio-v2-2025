@@ -91,7 +91,7 @@ const ProjectYear = ({ year, lang }) => {
                 {
                     year.split("").map((l, i) => <A_character l={l} i={i} key={i} />)
                 }
-                <span span className="absolute bg-gradient-to-t from-background to-transparent h-[50px] bottom-0 left-0  w-full"></span>
+                <span  className="absolute bg-gradient-to-t from-background to-transparent h-[50px] bottom-0 left-0  w-full"></span>
 
             </div>
 

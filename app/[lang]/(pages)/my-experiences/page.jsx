@@ -1,9 +1,15 @@
 import { GetTrans } from "@/lib/server-i18n";
 
-export const metadata = {
-    title: "iderkaoui mustapha",
-    description: "full-stack developer | iderkaoui mustapha"
-};
+
+export const generateMetadata = async ({ params }) => {
+    const { lang } = await params;
+    const dict = GetTrans(lang)
+    return {
+        title: dict?.SEO?.EXPERINCE?.TITLE,
+        description: dict?.SEO?.EXPERINCE?.DESCRIPTION
+    }
+}
+
 const page = ({ params }) => {
     const { lang } = params;
     const t = GetTrans(lang);

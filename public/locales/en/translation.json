@@ -74,28 +74,28 @@
         "content": "This training has provided me with a strong foundation in web development, teamwork, and professionalism, which I continue to build on as I progress in my career."
     }
   },
-  "EXPER2":  {
-    "title": "Freelance Experience - E-commerce Project",
-    "introduction": "I joined an online freelance team to develop an e-commerce website for a store specializing in phones and electronics. This remote project allowed me to work on both the development and UI design, using Figma to craft clean, user-friendly interfaces aligned with the client's brand. Through this experience, I improved my time management, participated in regular meetings, delivered tasks on time, and communicated directly with the client to ensure their needs were met efficiently and professionally.",
-    "key_takeaways_title": "Key Takeaways",
-    "key_takeaways": [
-        "Gained experience working remotely in a freelance team.",
-        "Learned how to manage and respect meeting schedules and deadlines.",
-        "Delivered tasks efficiently while maintaining quality.",
-        "Communicated directly with clients to understand their needs and feedback.",
-        "Contributed to UI/UX design using Figma, enhancing the user interface and overall experience.",
-        "Improved self-discipline and accountability in a remote work setting."
-    ]
-},
-"EXPER3":{
-  "title": "Personal Commitment to Growth",
-  "introduction": "Over the past two years at ISTA Agadir, I've taken a proactive approach to my development as a full-stack developer. While my formal education provided a foundation, I recognized early on that true mastery required daily dedication beyond the classroom.",
-  "body": "Each day, I engaged in self-directed learning—exploring new technologies, building projects, and deepening my understanding of both front-end and back-end development. This consistent effort has not only enhanced my technical skills but also fostered a mindset of continuous improvement and adaptability."
-},
-"ERRORS":{
-  "PAGE_UNDER_CONSTRUCTURE":"Coming Soon | I'm Building Something Awesome",
-  "PAGE_UNDER_CONSTRUCTURE2":"I'm currently working on this page to make it better. Check back soon for updates!"
-}
+    "EXPER2":  {
+      "title": "Freelance Experience - E-commerce Project",
+      "introduction": "I joined an online freelance team to develop an e-commerce website for a store specializing in phones and electronics. This remote project allowed me to work on both the development and UI design, using Figma to craft clean, user-friendly interfaces aligned with the client's brand. Through this experience, I improved my time management, participated in regular meetings, delivered tasks on time, and communicated directly with the client to ensure their needs were met efficiently and professionally.",
+      "key_takeaways_title": "Key Takeaways",
+      "key_takeaways": [
+          "Gained experience working remotely in a freelance team.",
+          "Learned how to manage and respect meeting schedules and deadlines.",
+          "Delivered tasks efficiently while maintaining quality.",
+          "Communicated directly with clients to understand their needs and feedback.",
+          "Contributed to UI/UX design using Figma, enhancing the user interface and overall experience.",
+          "Improved self-discipline and accountability in a remote work setting."
+      ]
+    },
+    "EXPER3":{
+      "title": "Personal Commitment to Growth",
+      "introduction": "Over the past two years at ISTA Agadir, I've taken a proactive approach to my development as a full-stack developer. While my formal education provided a foundation, I recognized early on that true mastery required daily dedication beyond the classroom.",
+      "body": "Each day, I engaged in self-directed learning—exploring new technologies, building projects, and deepening my understanding of both front-end and back-end development. This consistent effort has not only enhanced my technical skills but also fostered a mindset of continuous improvement and adaptability."
+    },
+    "ERRORS":{
+      "PAGE_UNDER_CONSTRUCTURE":"Coming Soon | I'm Building Something Awesome",
+      "PAGE_UNDER_CONSTRUCTURE2":"I'm currently working on this page to make it better. Check back soon for updates!"
+    }
     ,
     "PROJECTS":{
       "PROBELM":"The problem",
@@ -104,6 +104,20 @@
       "TECHUSED":"Technologies used",
       "CHANLLANGES":"challanges"
 
+    },
+    "SEO":{
+      "HOME":{
+        "TITLE":"iderkaoui mustpaha",
+        "DESCRIPTION":"full stack developer   - iderkaoui mustapha"
+      },
+      "EXPERINCE":{
+        "TITLE":"Experiences",
+        "DESCRIPTION":"Mustapha Iderkaoui's experiences"
+      },
+      "PROJECTS":{
+        "TITLE":"Projects",
+        "DESCRIPTION":"Projects built by Mustapha Iderkaoui "
+      }
     }
   }
 

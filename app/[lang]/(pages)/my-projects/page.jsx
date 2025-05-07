@@ -5,12 +5,22 @@ import ProjectYear from "@/Components/Client/ProjectYear";
 import { Button } from "@/Components/ui/button";
 import { GetTrans } from "@/lib/server-i18n";
 import { TechIcones } from "@/lib/utils";
-import { ExternalLink, Figma, Github, TvMinimalPlay, Video } from "lucide-react";
-import Image from "next/image";
-export const metadata = {
-    title: "iderkaoui mustapha",
-    description: "full-stack developer | iderkaoui mustapha"
-};
+import { ExternalLink, Figma, Github, TvMinimalPlay } from "lucide-react";
+
+
+export const generateMetadata = async ({ params }) => {
+    const { lang } = await params
+    const dict = GetTrans(lang);
+    return {
+        title: dict?.SEO?.PROJECTS?.TITLE,
+        description: dict?.SEO?.PROJECTS?.DESCRIPTION,
+        openGraph: {
+            title: dict?.SEO?.PROJECTS?.TITLE,
+            description: dict?.SEO?.PROJECTS?.DESCRIPTION,
+            images: ['/media/iderkaoui-mustapha.jpg']
+        }
+    }
+}
 
 
 const page = async ({ params }) => {
