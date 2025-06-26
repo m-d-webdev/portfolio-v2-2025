@@ -23,7 +23,7 @@ export default async function Home({ params }) {
   const dict = GetTrans(lang);
 
   return (
-    <div className="  w-full   h-full flex items-center justify-center">
+    <div className="  w-full    h-full flex items-center justify-center">
       <div className="w-full   justify-center flex flex-col items-center  h-full max-w-[1200px]">
         <div className="flex flex-col items-center pt-10  w-full">
           <div className="relative">

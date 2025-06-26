@@ -8,6 +8,7 @@
   font-style: normal;
 } */
 
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -93,7 +94,8 @@
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
   --gray2: #f0eeee6a;
-
+  --bg-wh: #fff;
+  --main-bg-color: #fbfcfc;
 }
 
 .dark {
@@ -131,6 +133,32 @@
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
   --gray2: #3030306a;
+  --bg-wh: #000000;
+  --main-bg-color: #0c0c0c;
+
+}
+
+/* body {
+  cursor: none !important
+}
+
+* {
+  cursor: none !important
+} */
+
+
+
+@keyframes AnimCharara {
+  0% {
+    transform: translateX(0px)
+  }
+
+  100% {
+
+    transform: translateX(20px);
+    opacity: 0;
+
+  }
 }
 
 @layer base {
@@ -144,9 +172,10 @@
 }
 
 /* ---------------  My css -------------- */
-.scrl_none::-webkit-scrollbar{
+.scrl_none::-webkit-scrollbar {
   display: none;
 }
+
 .sMyName::after {
   opacity: .7;
   background-color: var(--background);

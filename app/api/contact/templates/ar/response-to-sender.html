@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Thank You for Reaching Out</title>
+    <style>
+        body {
+            background-color: #f9fafb;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+        }
+
+        .content {
+            padding: 30px;
+            color: #374151;
+            line-height: 1.6;
+        }
+
+        .heading {
+            color: #111827;
+            margin-bottom: 16px;
+        }
+
+        .footer {
+            background-color: #f3f4f6;
+            padding: 15px;
+            text-align: center;
+            font-size: 12px;
+            color: #9ca3af;
+        }
+
+        a {
+            color: #3b82f6;
+            text-decoration: none;
+        }
+
+        .imgContainer {
+            width: 100%;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .img {
+            width: 200px;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <table width="100%" cellpadding="0" cellspacing="0" class="container">
+        <td class="content" dir="rtl" style="text-align: right;">
+            <h2 class="heading">مرحبًا {{name}}،</h2>
+            <p>
+                شكرًا جزيلًا على تواصلك — أقدّر رسالتك كثيرًا.
+            </p>
+            <div class="imgContainer">
+                <img class="img"
+                    src="https://img.freepik.com/free-vector/thank-you-card-concept-illustration_114360-27734.jpg?uid=R123397791&ga=GA1.1.1129382029.1738587031&w=740"
+                    alt="شكرًا لك">
+            </div>
+            <p>
+                يسعدني دائمًا التواصل مع محترفين يهتمون بأعمالي. سواء كنت تتواصل من أجل تعاون، أو فرصة، أو فقط لمعرفة
+                المزيد، أنا متواجد وسعيد بمواصلة الحديث.
+            </p>
+            <p>
+                إذا كنت ترغب في مناقشة أي شيء بالتفصيل أو ترتيب مكالمة، فلا تتردد في الرد على هذا البريد الإلكتروني.
+                سأقوم بالرد في أقرب وقت ممكن.
+            </p>
+            <p style="margin-top: 30px;">
+                أطيب التحيات،<br />
+                <strong>مصطفى إيدكاوي</strong><br />
+                مطور ويب Full Stack<br />
+                <a href="{{link}}">{{link}}</a>
+            </p>
+        </td>
+        <tr>
+            <td class="footer">
+                © {{year}} مصطفى إيدكاوي. جميع الحقوق محفوظة.
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

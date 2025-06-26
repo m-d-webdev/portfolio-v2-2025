@@ -63,7 +63,7 @@ const A_character = ({ l, i }) => {
                                         // damping: true,
                                     }
                                 }}
-                            className={`text-6xl opacity-70 font-bold`
+                            className={`text-5xl opacity-70  font-bold`
                             } >
                             {l}
                         </motion.span >
@@ -85,13 +85,13 @@ const A_character = ({ l, i }) => {
 
 const ProjectYear = ({ year, lang }) => {
     return (
-        <div className={`  h-full   w-[65px]     overflow-hidden  flex items-center justify-center `}>
+        <div className={`     w-[65px] min-w-[65px] h-100     overflow-hidden  flex items-center justify-center `}>
 
             <div className={`relative    ${lang == "ar" ? "rotate-90 flex-row-reverse" : "-rotate-90"}       flex items-center justify-center`}>
                 {
                     year.split("").map((l, i) => <A_character l={l} i={i} key={i} />)
                 }
-                <span  className="absolute bg-gradient-to-t from-background to-transparent h-[50px] bottom-0 left-0  w-full"></span>
+                <span className="absolute bg-gradient-to-t from-background to-transparent h-[50px] bottom-0 left-0  w-full"></span>
 
             </div>
 

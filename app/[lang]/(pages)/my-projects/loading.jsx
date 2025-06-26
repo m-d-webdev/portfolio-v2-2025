@@ -2,8 +2,7 @@ import "@/Components/Client/loaders/loaderCss.css"
 
 const loading = () => {
     return (
-        <div className="flex items-start justify-between w-full max-w-[1500px]  p-10">
-
+        <div className="flex items-start  px-10 justify-between w-full  p-10">
             <div className=" flex flex-col gap-5">
                 <div className="duration-400 rounded-2xl  transition-colors  bg-muted md:w-[700px]  animate-pulse  h-[40px]"></div>
                 <div className="duration-400 rounded-2xl  transition-colors  bg-muted md:w-[600px] ml-4 animate-pulse  h-[60px]"></div>

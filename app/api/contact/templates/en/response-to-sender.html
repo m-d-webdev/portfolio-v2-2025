@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Thank You for Reaching Out</title>
+    <style>
+        body {
+            background-color: #f9fafb;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+        }
+
+        .content {
+            padding: 30px;
+            color: #374151;
+            line-height: 1.6;
+        }
+
+        .heading {
+            color: #111827;
+            margin-bottom: 16px;
+        }
+
+        .footer {
+            background-color: #f3f4f6;
+            padding: 15px;
+            text-align: center;
+            font-size: 12px;
+            color: #9ca3af;
+        }
+
+        a {
+            color: #3b82f6;
+            text-decoration: none;
+        }
+
+        .imgContainer {
+            width: 100%;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .img {
+            width: 200px;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <table width="100%" cellpadding="0" cellspacing="0" class="container">
+        <tr>
+            <td class="content">
+                <h2 class="heading">Hello {{name}},</h2>
+                <p>
+                    Thank you for getting in touch — I truly appreciate your message.
+                </p>
+                <div class="imgContainer">
+                    <img class="img"
+                        src="https://img.freepik.com/free-vector/thank-you-card-concept-illustration_114360-27734.jpg?uid=R123397791&ga=GA1.1.1129382029.1738587031&w=740"
+                        alt="">
+                </div>
+                <p>
+                    I’m always excited to connect with professionals who take an interest in my work. Whether you’re
+                    reaching out regarding a collaboration, an opportunity, or simply to learn more, I’m here and happy
+                    to continue the conversation.
+                </p>
+                <p>
+                    If you’d like to discuss anything in detail or arrange a call, feel free to reply directly to this
+                    email. I’ll get back to you as soon as possible.
+                </p>
+                <p style="margin-top: 30px;">
+                    Best regards,<br />
+                    <strong>Mustapha Idekaoui</strong><br />
+                    Full Stack Web Developer<br />
+                    <a href="{{link}}">{{link}}</a>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td class="footer">
+                © {{year}} Mustapha Idekaoui. All rights reserved.
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

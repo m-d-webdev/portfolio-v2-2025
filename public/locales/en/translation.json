@@ -1,124 +1,221 @@
-  {
-    "LINKS": {
-      "HOME": "Home",
-      "EXPERINCE": "Experience",
-      "WORKS": "Projects",
-      "ME": "About Me",
-      "CONTACT": "Contact",
-      "EDUCATION": "Education",
-      "COMMENTS": "Testimonials",
-      "GAME": "Playground"
+{
+    "LINKS": 
+    {
+        "HOME": "Home",
+        "EXPERINCE": "Experience",
+        "WORKS": "Projects",
+        "ME": "About Me",
+        "CONTACT": "Contact",
+        "EDUCATION": "Education",
+        "COMMENTS": "Testimonials",
+        "GAME": "Playground"
     },
-   "HOME": {
-      "name": "Mustapha Iderkaoui",
-      "title": "Full-stack developer",
-      "highlight": "Scalable. Modern. Maintainable. I turn ideas into clean, flexible code — and I love every part of it.",
-      "about_1": "I'm focused on building scalable, performance-driven websites that deliver great user experiences. I work with technologies like React for modern frontend development and Node.js to power reliable backend systems. Clean code, accessibility, and maintainability are always at the core of what I build.",
-      "about_2": "I also pay attention to SEO fundamentals — and I know how to organize projects in Next.js to support better visibility, structure, and performance across search engines.",
-      "location": "Based in Agadir, Morocco · 2+ years of self-taught & academic full-stack development."
+    "HOME": 
+    {
+        "name": "Mustapha Iderkaoui",
+        "title": "Full-stack developer",
+        "highlight": "Scalable. Modern. Maintainable. I turn ideas into clean, flexible code — and I love every part of it.",
+        "about_1": "I'm focused on building scalable, performance-driven websites that deliver great user experiences. I work with technologies like React for modern frontend development and Node.js to power reliable backend systems. Clean code, accessibility, and maintainability are always at the core of what I build.",
+        "about_2": "I also pay attention to SEO fundamentals — and I know how to organize projects in Next.js to support better visibility, structure, and performance across search engines.",
+        "location": "Based in Agadir, Morocco · 2+ years of self-taught & academic full-stack development."
     },
-    "BUTTONS":{
-      "home": "Home",
-      "about": "About Me",
-      "projects": "Projects",
-      "skills": "Skills",
-      "contact": "Contact",
-      "download_cv": "Download CV",
-      "hire_me": "Hire Me",
-      "view_more": "View More",
-      "back_to_top": "Back to Top",
-      "send_message": "Send Message",
-      "get_in_touch": "Get in Touch",
-      "download_resume": "Download Resume",
-      "view_portfolio": "View Portfolio",
-      "lets_collaborate": "Let's Collaborate",
-      "schedule_call": "Schedule a Call",
-      "subscribe_newsletter": "Subscribe to Newsletter",
-      "read_blog": "Read My Blog",
-      "follow_me": "Follow Me",
-      "testimonials": "See Testimonials",
-      "expore_projects":"Explore My Projects"
+    "BUTTONS": 
+    {
+        "home": "Home",
+        "about": "About Me",
+        "projects": "Projects",
+        "skills": "Skills",
+        "contact": "Contact",
+        "download_cv": "Download CV",
+        "hire_me": "Hire Me",
+        "view_more": "View More",
+        "back_to_top": "Back to Top",
+        "send_message": "Send Message",
+        "get_in_touch": "Get in Touch",
+        "download_resume": "Download Resume",
+        "view_portfolio": "View Portfolio",
+        "lets_collaborate": "Let's Collaborate",
+        "schedule_call": "Schedule a Call",
+        "subscribe_newsletter": "Subscribe to Newsletter",
+        "read_blog": "Read My Blog",
+        "follow_me": "Follow Me",
+        "testimonials": "See Testimonials",
+        "expore_projects": "Explore My Projects",
+        "open_all": "Open all",
+        "start_chat":"Start chat ",
+        "live_chat": "Live Chat"
     },
-    "EXPERINCE":{
-      "introduction": "During my first training experience at Développeur-informatique.ma, I gained valuable skills and insights that shaped my development approach. Here are some key takeaways:",
-      "title": "My First Training Experience at ",
-      "sections": [
-          {
-              "subtitle": "Git & Version Control",
-              "content": "Gained hands-on experience managing repositories, handling merges, and resolving code conflicts."
-          },
-          {
-              "subtitle": "Team Collaboration",
-              "content": "Learned the importance of working in a team, sharing ideas, and ensuring smooth communication."
-          },
-          {
-              "subtitle": "Website Security",
-              "content": "Contributed to increasing the security of the website, ensuring a safer user experience."
-          },
-          {
-              "subtitle": "Code Optimization",
-              "content": "Focused on creating scalable, efficient code while simplifying and improving performance."
-          },
-          {
-              "subtitle": "Improved French Language Skills",
-              "content": "Enhanced my communication in a bilingual work environment."
-          },
-          {
-              "subtitle": "Problem-Solving & Professionalism",
-              "content": "Developed strong problem-solving skills and learned how to stay professional in a workplace setting."
-          }
-          
-      ],
-     "CONCLUSION": {
-        "subtitle": "Conclusion",
-        "content": "This training has provided me with a strong foundation in web development, teamwork, and professionalism, which I continue to build on as I progress in my career."
-    }
-  },
-    "EXPER2":  {
-      "title": "Freelance Experience - E-commerce Project",
-      "introduction": "I joined an online freelance team to develop an e-commerce website for a store specializing in phones and electronics. This remote project allowed me to work on both the development and UI design, using Figma to craft clean, user-friendly interfaces aligned with the client's brand. Through this experience, I improved my time management, participated in regular meetings, delivered tasks on time, and communicated directly with the client to ensure their needs were met efficiently and professionally.",
-      "key_takeaways_title": "Key Takeaways",
-      "key_takeaways": [
-          "Gained experience working remotely in a freelance team.",
-          "Learned how to manage and respect meeting schedules and deadlines.",
-          "Delivered tasks efficiently while maintaining quality.",
-          "Communicated directly with clients to understand their needs and feedback.",
-          "Contributed to UI/UX design using Figma, enhancing the user interface and overall experience.",
-          "Improved self-discipline and accountability in a remote work setting."
-      ]
+    "COMMON": 
+    {
+        "EMAIL": "Email",
+        "NAME": "Your name",
+        "MESSAGE": "Message",
+        "SUBMIT": "Submit",
+        "CANCEL": "Cancel",
+        "SEND": "Send",
+        "RESET": "Reset",
+        "PASSWORD": "Password",
+        "CONFIRM_PASSWORD": "Confirm Password",
+        "LOGIN": "Login",
+        "LOGOUT": "Logout",
+        "REGISTER": "Register",
+        "USERNAME": "Username",
+        "SEARCH": "Search",
+        "LOADING": "Loading...",
+        "REQUIRED": "This field is required",
+        "OPEN_CHAT": "Open chat",
+        "OPTIONAL": "Optional",
+        "SUCCESS": "Success",
+        "ERROR": "Error",
+        "WELCOME": "Welcome",
+        "HOME": "Home",
+        "PROFILE": "Profile",
+        "SETTINGS": "Settings",
+        "COPIED":"Copied !" ,
+        "LOADMORE":"Discover More Projects"
     },
-    "EXPER3":{
-      "title": "Personal Commitment to Growth",
-      "introduction": "Over the past two years at ISTA Agadir, I've taken a proactive approach to my development as a full-stack developer. While my formal education provided a foundation, I recognized early on that true mastery required daily dedication beyond the classroom.",
-      "body": "Each day, I engaged in self-directed learning—exploring new technologies, building projects, and deepening my understanding of both front-end and back-end development. This consistent effort has not only enhanced my technical skills but also fostered a mindset of continuous improvement and adaptability."
-    },
-    "ERRORS":{
-      "PAGE_UNDER_CONSTRUCTURE":"Coming Soon | I'm Building Something Awesome",
-      "PAGE_UNDER_CONSTRUCTURE2":"I'm currently working on this page to make it better. Check back soon for updates!"
-    }
-    ,
-    "PROJECTS":{
-      "PROBELM":"The problem",
-      "SOLUTION":"the solution",
-      "KEYAWAYS":"takeaways",
-      "TECHUSED":"Technologies used",
-      "CHANLLANGES":"challanges"
+    "ABOUT_ME":{
+      "TITLE":"Looking for a Passionate Developer? You Just Found One",
+      "IM_BASED": "I'm based in Agadir, but open to remote work, relocation, or working in another city. I'm also open to internships or training opportunities that help me grow as a developer. Feel free to reach out."
 
     },
-    "SEO":{
-      "HOME":{
-        "TITLE":"iderkaoui mustpaha",
-        "DESCRIPTION":"full stack developer   - iderkaoui mustapha"
-      },
-      "EXPERINCE":{
-        "TITLE":"Experiences",
-        "DESCRIPTION":"Mustapha Iderkaoui's experiences"
-      },
-      "PROJECTS":{
-        "TITLE":"Projects",
-        "DESCRIPTION":"Projects built by Mustapha Iderkaoui "
-      }
-    }
-  }
+    "CONTACT":{
+         "success": "Email sent successfully!",
+        "error": "Failed to send email. Please try again."
+    },
+    "EXPERINCE": 
+    {
+        "introduction": "During my first training experience at Développeur-informatique.ma, I gained valuable skills and insights that shaped my development approach. Here are some key takeaways:",
+        "title": "My First Training Experience at ",
+        "sections": 
+        [
+            {
+                "subtitle": "Git & Version Control",
+                "content": "Gained hands-on experience managing repositories, handling merges, and resolving code conflicts."
+            },
+            {
+                "subtitle": "Team Collaboration",
+                "content": "Learned the importance of working in a team, sharing ideas, and ensuring smooth communication."
+            },
+            {
+                "subtitle": "Website Security",
+                "content": "Contributed to increasing the security of the website, ensuring a safer user experience."
+            },
+            {
+                "subtitle": "Code Optimization",
+                "content": "Focused on creating scalable, efficient code while simplifying and improving performance."
+            },
+            {
+                "subtitle": "Improved French Language Skills",
+                "content": "Enhanced my communication in a bilingual work environment."
+            },
+            {
+                "subtitle": "Problem-Solving & Professionalism",
+                "content": "Developed strong problem-solving skills and learned how to stay professional in a workplace setting."
+            }
+        ],
+        "CONCLUSION": 
+        {
+            "subtitle": "Conclusion",
+            "content": "This training has provided me with a strong foundation in web development, teamwork, and professionalism, which I continue to build on as I progress in my career."
+        }
+    },
+    "EXPER2": 
+    {
+        "title": "Freelance Experience - E-commerce Project",
+        "introduction": "I joined an online freelance team to develop an e-commerce website for a store specializing in phones and electronics. This remote project allowed me to work on both the development and UI design, using Figma to craft clean, user-friendly interfaces aligned with the client's brand. Through this experience, I improved my time management, participated in regular meetings, delivered tasks on time, and communicated directly with the client to ensure their needs were met efficiently and professionally.",
+        "key_takeaways_title": "Key Takeaways",
+        "key_takeaways": 
+        [
+            "Gained experience working remotely in a freelance team.",
+            "Learned how to manage and respect meeting schedules and deadlines.",
+            "Delivered tasks efficiently while maintaining quality.",
+            "Communicated directly with clients to understand their needs and feedback.",
+            "Contributed to UI/UX design using Figma, enhancing the user interface and overall experience.",
+            "Improved self-discipline and accountability in a remote work setting."
+        ]
+    },
+    "EXPER3": 
+    {
+        "title": "Personal Commitment to Growth",
+        "introduction": "Over the past two years at ISTA Agadir, I've taken a proactive approach to my development as a full-stack developer. While my formal education provided a foundation, I recognized early on that true mastery required daily dedication beyond the classroom.",
+        "body": "Each day, I engaged in self-directed learning—exploring new technologies, building projects, and deepening my understanding of both front-end and back-end development. This consistent effort has not only enhanced my technical skills but also fostered a mindset of continuous improvement and adaptability."
+    },
+    "ERRORS": 
+    {
+        "PAGE_UNDER_CONSTRUCTURE": "Coming Soon | I'm Building Something Awesome",
+        "PAGE_UNDER_CONSTRUCTURE2": "I'm currently working on this page to make it better. Check back soon for updates!"
+    },
+    "PROJECTS": 
+    {
+        "PROBELM": "The problem",
+        "SOLUTION": "the solution",
+        "KEYAWAYS": "takeaways",
+        "TECHUSED": "Technologies used",
+        "CHANLLANGES": "challanges"
+    },
+    "CHAT":{
+        "TITLE":"Let's chat together live!",
+        "SUBTITLE":"Would you like to discuss web development, technology, or a potential collaboration? Use this chat to contact me directly and I will get back to you as soon as possible.",
+        "INPUT_LABEL":"Type a message...",
+        "SUGGESTIONS":{
+                "start": [
+                "Hello Mustapha, nice to meet you. 👋",
+                "Hi, I just visited your portfolio.",
+                "I’m interested in learning more about your work.",
+                "Are you currently open to opportunities?",
+                "Can you tell me more about your latest project?"
+                ],
+                "during": [
+                "Ok, I see.",
+                "That’s impressive.",
+                "Tell me more about that.",
+                "And what stack did you use?",
+                "How long did this project take you?",
+                "Did you work on this alone or as a team?"
+                ],
+                "after_explanation": [
+                "Thanks for the explanation.",
+                "Great, that’s clear.",
+                "Sounds good!",
+                "Interesting approach.",
+                "I like how you handled that."
+                ],
+                "closing": [
+                "Thanks for your time, Mustapha.",
+                "Let’s stay in touch.",
+                "Can you share your CV or LinkedIn?",
+                "I’ll get back to you soon.",
+                "I’ll forward this to our HR team."
+                ]
+            },
+        "WELCOMING":{
+            "title": "👋 Hello and welcome,",
+            "paragraphs": [
+                "I'm Mustapha, a passionate full stack developer with solid experience in building modern web applications using technologies like React, Next.js, and Node.js.",
+                "I'm currently open to new opportunities and collaborations. Feel free to reach out — I'd be happy to share more about my recent work and how I can contribute to your goals."
+                ],
+            "WAITFORME":"Thanks for waiting, I’ll be right with you",
+            "THANKFORWAITING":"Apologies for the delay, I’m available now."
+        }
 
-  
+    },
+    "SEO": 
+    {
+        "HOME": 
+        {
+            "TITLE": "iderkaoui mustpaha",
+            "DESCRIPTION": "full stack developer   - iderkaoui mustapha"
+        },
+        "EXPERINCE": 
+        {
+            "TITLE": "Experiences",
+            "DESCRIPTION": "Mustapha Iderkaoui's experiences"
+        },
+        "PROJECTS": 
+        {
+            "TITLE": "Projects",
+            "DESCRIPTION": "Projects built by Mustapha Iderkaoui "
+        }
+    }
+}
