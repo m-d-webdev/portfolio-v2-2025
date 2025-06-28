@@ -10,6 +10,7 @@ import Link from 'next/link';
 import { ContactIcon, Github, Languages, Moon, Sparkles, Sun } from 'lucide-react';
 import { ExperienceIcon, HomeIcon, ProjectsIcon } from '../ui/icons';
 import VerticalListCursorHover from '../Global/VerticalListCursorHover';
+import MenuHeader from './MenuHeader';
 
 
 export const Bulb = () => {
@@ -53,7 +54,8 @@ const ButtonLang = () => {
     }, [MenuOpen]);
     let Pathname = usePathname();
     let pathname = Pathname.split("/");
-    pathname = pathname[2] ?? ""
+    pathname = pathname[2] ?? "";
+
     const [lang, setLang] = useState(getLocaleFromPathname(Pathname))
     useEffect(() => {
         getLocaleFromPathname(Pathname)
@@ -69,7 +71,6 @@ const ButtonLang = () => {
             >
                 <Languages />
                 <span className='px-2'>
-
                     {lang}
                 </span>
             </Button>
@@ -190,8 +191,8 @@ const Header = () => {
     let currentPahtName = pathName.split("/")[2] ?? "/";
     if (pathName.split("/")[3] == "chat") { currentPahtName = "contact-me/chat" }
     return (
-        <div className='w-full  px-3 flex  justify-evenly items-center pt-2   '>
-            <div className="flex  items-center justify-center gap-8">
+        <div className='w-full  px-3 flex  justify-between xl:justify-evenly items-center pt-2   '>
+            <div className="xl:flex hidden  items-center justify-center gap-8">
                 <Link href={"/"}>
                     <Bulb />
                 </Link>
@@ -208,11 +209,8 @@ const Header = () => {
                         )
                     }
                 </VerticalListCursorHover>
-                {/* <div className="flex relative border border-black items-center justify-center gap-4"> */}
-
-                {/* <span className='bg-foreground absolute p-[2px] w-[20px]'></span> */}
-                {/* </div> */}
             </div>
+            <MenuHeader links={links} currentPahtName={currentPahtName} />
             <div className=""></div>
             <div className=""></div>
             <div className=""></div>

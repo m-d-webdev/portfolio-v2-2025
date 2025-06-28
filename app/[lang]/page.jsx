@@ -23,15 +23,15 @@ export default async function Home({ params }) {
   const dict = GetTrans(lang);
 
   return (
-    <div className="  w-full    h-full flex items-center justify-center">
-      <div className="w-full   justify-center flex flex-col items-center  h-full max-w-[1200px]">
-        <div className="flex flex-col items-center pt-10  w-full">
+    <div className="  w-full    h-full flex xl:items-center items-start xl:justify-center justify-start">
+      <div className="w-full   xl:justify-center p-2 px-3 xl:p-0 flex flex-col items-center  h-full max-w-[1200px]">
+        <div className="flex flex-col items-center xl:pt-10 pt-4  w-full">
           <div className="relative">
-            <h1 className="text-7xl MyName font-secondary  text-center font-extrabold tracking-[-5px]">{dict?.HOME?.name}</h1>
+            <h1 className="xl:text-7xl text-5xl MyName font-secondary  text-center font-extrabold tracking-[-5px]">{dict?.HOME?.name}</h1>
             <span className="absolute bg-gradient-to-t from-background to-transparent h-[40px] bottom-0 left-0 w-full"></span>
           </div>
-          <h2 className="mt-8  text-center text-2xl  font-bold tracking-tighter opacity-60">{dict?.HOME?.title}</h2>
-          <h1 className="text-2xl max-w-[1000px] text-center font-medium mt-10 tracking-[-1px]">{dict?.HOME?.highlight}</h1>
+          <h2 className="mt-8  text-center xl:text-2xl text-xl  font-bold tracking-tighter opacity-60">{dict?.HOME?.title}</h2>
+          <h1 className="xl:text-2xl text-xl max-w-[1000px] text-center font-medium mt-10 tracking-[-1px]">{dict?.HOME?.highlight}</h1>
           <ul className="mt-14 max-w-[800px]  ">
             <li><p className="text-center tracking-tight ">{dict?.HOME?.about_1}</p></li>
             <li><p className="text-center mt-6 tracking-tight ">{dict?.HOME?.about_2}</p></li>
@@ -41,7 +41,7 @@ export default async function Home({ params }) {
 
         {/* <div className="w-full  p-4  justify-between mt-20 gap-4 flex items-end"> */}
         {/* <Developer /> */}
-        <div className=" p-4 mt-15  justify-center  gap-4 flex items-center">
+        <div className=" p-4 mt-15  justify-center  gap-4 flex flex-wrap items-center">
           <Button
             size={"lg"}
           >

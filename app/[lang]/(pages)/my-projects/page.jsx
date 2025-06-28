@@ -42,7 +42,7 @@ const page = async ({ params }) => {
         "https://kratrit-c0e6d.web.app/",
     ];
     return (
-        <div className="w-full bg-[var(--main-bg-color)] min-h-full gap-40 px-4  xl:px-12  flex flex-col ">
+        <div className="w-full bg-[var(--main-bg-color)] min-h-full gap-40 px-2  xl:px-12  flex flex-col ">
             {projects &&
                 projects?.data
                     ?.sort((a, b) => {
@@ -58,13 +58,13 @@ const page = async ({ params }) => {
                             style={{
                                 // filter: "drop-shadow(0px 10px 8px var(--filter-color))"
                             }}
-                            key={i} className={` flex  border items-start hover:bg-[var(--bg-wh)]  p-4 py-10  rounded-lg   relative justify-between  px-3`}>
-                            <div className="flex max-w-[78%]   items-center">
+                            key={i} className={` flex flex-col xl:flex-row w-full  border xl:items-start items-center hover:bg-[var(--bg-wh)]  xl:p-4 xl:py-10  rounded-lg   relative justify-between  xl:px-3`}>
+                            <div className="flex xl:max-w-[78%]  max-w-full  items-center">
                                 {/* <ProjectYear lang={lang} year={"2024"} /> */}
-                                <div className={`${lang == "ar" ? "pr-6 border-r-2  mr-5 " : "pl-6 border-l  "} flex  border-border  flex-col max-w-[90%]   gap-2`}>
+                                <div className={`${lang == "ar" ? "xl:pr-6 border-r-2  mr-5 " : "xl:pl-6 border-l  "} flex  border-border  flex-col xl:max-w-[90%] w-full xl:w-auto  gap-2`}>
 
                                     <div className="relative  w-fit">
-                                        <h1 className="text-4xl  font-bold tracking-tighter">
+                                        <h1 className="xl:text-4xl  text-2xl font-bold  tracking-tighter">
                                             {i + 1} .  {
                                                 p.title[lang]
                                             }
@@ -77,7 +77,7 @@ const page = async ({ params }) => {
                                             p.subtitles && p.subtitles?.length > 0 &&
                                             <div className="flex flex-col pl-1 gap-2">
                                                 {
-                                                    p.subtitles?.map((s, i2) => <h2 className="text-lg font-medium tracking-tight" key={i2}>{s[lang]}</h2>)
+                                                    p.subtitles?.map((s, i2) => <h2 className="xl:text-lg font-medium tracking-tight" key={i2}>{s[lang]}</h2>)
                                                 }
                                             </div>
                                         }
@@ -85,7 +85,7 @@ const page = async ({ params }) => {
                                             p.problem[lang] &&
 
                                             <div className="flex gap-2 flex-col items-start">
-                                                <h2 className="font-medium text-nowrap text-red-700 text-lg opacity-70">{disct?.PROJECTS?.PROBELM}</h2>
+                                                <h2 className="font-medium text-nowrap text-red-700 xl:text-lg opacity-70">{disct?.PROJECTS?.PROBELM}</h2>
                                                 <p className="pl-4">{p.problem[lang]}</p>
                                             </div>
                                         }
@@ -93,15 +93,15 @@ const page = async ({ params }) => {
                                             p.solution[lang] &&
 
                                             <div className="flex gap-2 flex-col items-start">
-                                                <h2 className="font-medium text-nowrap text-lg text-green-600 opacity-70">{disct?.PROJECTS?.SOLUTION}</h2>
+                                                <h2 className="font-medium text-nowrap xl:text-lg text-green-600 opacity-70">{disct?.PROJECTS?.SOLUTION}</h2>
                                                 <p className="pl-4">{p.solution[lang]}</p>
                                             </div>
                                         }
                                         {
                                             p.takeaways && p.takeaways.length > 0 &&
                                             <>
-                                                <h1 className="text-lg font-medium ml-4 mt-4 opacity-70 tracking-tighter">{disct?.PROJECTS?.KEYAWAYS}</h1>
-                                                <ul className={` ${lang == "ar" ? "pr-15 " : "pl-15 "} flex  flex-col mt-1  gap-3}`}>
+                                                <h1 className="text-lg font-medium xl:ml-4 mt-4 opacity-70 tracking-tighter">{disct?.PROJECTS?.KEYAWAYS}</h1>
+                                                <ul className={` ${lang == "ar" ? "xl:pr-15 pr-8 " : "xl:pl-15 pl-8 "} flex  flex-col mt-1  gap-3}`}>
                                                     {p.takeaways.map((t, i3) => <li key={i3} className="list-decimal font-medium">{t[lang]}</li>)}
                                                 </ul>
                                             </>
@@ -117,7 +117,7 @@ const page = async ({ params }) => {
                                         }
                                         {
                                             p.technologies && p.technologies.length > 0 &&
-                                            <div className=" flex gap-4 items-center mt-10">
+                                            <div className=" flex gap-4 flex-col xl:flex-row xl:items-center mt-10">
                                                 <h1 className=" font-medium text-nowrap  opacity-70 tracking-tighter">{disct?.PROJECTS?.TECHUSED}</h1>
                                                 <div className="max-w-[80%]  overflow-hidden">
 
@@ -135,8 +135,8 @@ const page = async ({ params }) => {
 
                                         {
                                             p.links && p.links.length > 0 &&
-                                            <div className=" flex gap-4 items-center mt-10">
-                                                <ul className="flex flex-row flex-wrap items-start  gap-5">
+                                            <div className=" flex gap-4 items-center mt-5 xl:mt-10">
+                                                <ul className="flex flex-row flex-wrap  xl:items-start  items-center justify-center xl:justify-start gap-5">
                                                     {p.links.map((t, i3) =>
                                                         <Button key={i3}
                                                             variant={["live demo", "live", "view live project", 'view source code', "github", "open in github", "github repo"].includes(t.label['en']?.toLowerCase()) ? "default" : "outline"}

@@ -10,26 +10,25 @@ export const metadata = {
   title: "iderkaoui mustapha",
   description: "full-stack developer | iderkaoui mustapha"
 };
-const LINKDINLINK = "https://www.linkedin.com/in/mustapha-iderkaoui-2748ab31b/"
-
+const { MYPHONE_NUMBER, LINKDINLINK } = process.env
 const page = async ({ params }) => {
   const { lang } = await params
   const dict = GetTrans(lang)
   return (
     <div className="flex w-full   mr-auto justify-center ">
-      <div className="w-full px-0 xl:px-8 max-w-[1500px] items-center flex justify-between  flex-col xl:flex-row">
+      <div className="w-full px-4 xl:px-8 max-w-[1500px] items-center flex justify-between  flex-col xl:flex-row">
         <div className="w-full mb:10 md:mb-0 xl:w-auto">
-          <h1 className="text-[40px] font-bold tracking-tighter md:w-[700px]">{dict?.ABOUT_ME?.TITLE}</h1>
+          <h1 className="xl:text-[40px] text-[28px] font-bold tracking-tighter md:w-[700px]">{dict?.ABOUT_ME?.TITLE}</h1>
           <h2 className="opacity-70 md:max-w-[600px] mt-3 ml-2">{dict?.ABOUT_ME?.IM_BASED}</h2>
 
-          <div className="flex relative items-center flex-col w-full max-w-[800px]  mt-8">
+          <div className="flex xl:mt-8  relative items-center flex-col w-full max-w-[800px]  mt-10">
             <span className="w-full text-center font-semibold tracking-tighter text-2xl">{dict?.HOME?.name}</span>
 
-            <svg className={`absolute opacity-60 ${lang == "ar" ? "scale-x-[-1]" : ""} top-6`} width="489" height="335" viewBox="0 0 489 335" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg className={`absolute xl:block hidden opacity-60 ${lang == "ar" ? "scale-x-[-1]" : ""} top-6`} width="489" height="335" viewBox="0 0 489 335" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M1 97V76C99.1667 77.5 295.5 64.6 295.5 1C299.1 99.8 425.333 127.5 488 129V145.5" stroke="black" stroke-opacity="0.48" />
               <path d="M296 2C266.978 205.618 164.574 294.983 117 314.214V335" stroke="#858585" />
             </svg>
-
+      
 
             <div className="flex w-full px-7 mt-16 flex-col">
               <Mail className="text-red-500" />
@@ -39,7 +38,7 @@ const page = async ({ params }) => {
               </a>
             </div>
 
-            <div className="flex px-7 w-full  justify-end items-end mt-4 flex-col">
+            <div className="flex px-7 w-full  justify-end items-end xl:mt-4 mt-12 flex-col">
               <div className="flex flex-col">
                 <svg aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
@@ -57,12 +56,14 @@ const page = async ({ params }) => {
                 </svg>
 
                 <a className="flex flex-col items-center font-bold tracking-tighter gap-3 ">
-                  +212 767 31 0612
+                  +{MYPHONE_NUMBER}
                   <div className="flex gap-2">
-                    <Button className={"bg-green-500 w-[140px] font-semibold text-white "}>
-                      {dict?.COMMON.OPEN_CHAT}
-                    </Button>
-                    <ButtonCopy text={"+212 767 31 0612"} />
+                    <a href={`https://wa.me/${MYPHONE_NUMBER.replace(/ /g, "")}`} target="_blank">
+                      <Button className={"bg-green-500 w-[140px] font-semibold text-white "}>
+                        {dict?.COMMON.OPEN_CHAT}
+                      </Button>
+                    </a>
+                    <ButtonCopy text={`+${MYPHONE_NUMBER}`} />
                   </div>
                 </a>
               </div>
@@ -80,7 +81,7 @@ const page = async ({ params }) => {
           </div>
 
         </div>
-        <div className="h-full pt-10 items-end  justify-between flex flex-col  ">
+        <div className="h-full w-full mt-10 xl:mt-0  xl:w-auto pt-10 items-end  justify-between flex flex-col  ">
           <ContactMeForm />
 
           <Link className={"px-8 flex w-full  justify-center items-center bg-background  gap-2 font-semibold border rounded-md p-3 "} href={"/contact-me/chat"}>
