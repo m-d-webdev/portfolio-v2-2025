@@ -22,17 +22,22 @@ export function middleware(request) {
     locale => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
   );
 
-  if (pathnameHasLocale) return NextResponse.next();
+  if (pathnameHasLocale) {
+    console.log("pathnameHasLocale ---------------");
+
+    return NextResponse.next();
+  }
 
   const defVal = request.cookies?.get("i18next")?.value || "en";
-
+  if (request.cookies?.get("i18next")?.value) {
+    console.log("We are testing => This is the middleware ,i18next =>  ", request.cookies?.get("i18next").value);
+  }
   request.nextUrl.pathname = `/${defVal}${pathname}`;
   return NextResponse.redirect(request.nextUrl);
 }
 
 export const config = {
   matcher: [
-    // Skip these paths
     '/((?!api|_next/static|_next/image|favicon.ico).*)',
   ],
 };
