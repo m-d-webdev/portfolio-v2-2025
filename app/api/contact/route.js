@@ -7,7 +7,7 @@ import fs from 'fs';
 const MY_PROFF_EMAIL = "iderkaoui.mustapha.dev@gmail.com"
 const NODEMAILER_EMAIL_ADDRESS = "mstph.iderkaoui@gmail.com"
 
-const WEBSITE_LINK = "http://localhost:3000/"
+const WEBSITE_LINK = process.env.WEBSITELINK || "http://localhost:3000"
 export const POST = async (request) => {
     try {
         const body = await request.json();

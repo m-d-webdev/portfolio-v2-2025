@@ -6,6 +6,7 @@ import { Textarea } from '../ui/textarea';
 import { Button } from '../ui/button';
 import Spinner from './loaders/Spinner';
 import { pa9 } from '../Global/MyToas';
+const WEBSITELINK = process.env.NEXT_PUBLIC_WEBSITELINK;
 
 const ContactMeForm = () => {
     const { t, i18n } = useTranslation();
@@ -22,7 +23,7 @@ const ContactMeForm = () => {
         setemailsent(false)
         try {
 
-            const url = "http://localhost:3000/api/contact";
+            const url = `${WEBSITELINK}/api/contact`;
 
             setLoading(true)
 
