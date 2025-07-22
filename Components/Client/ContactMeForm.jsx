@@ -15,8 +15,8 @@ const ContactMeForm = () => {
         email: "",
         text: ""
     });
+    
     const [emailsent, setemailsent] = useState(false)
-
     const [isLoading, setLoading] = useState(false)
 
     const handleSubmitEmailText = async () => {
