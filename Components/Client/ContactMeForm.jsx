@@ -11,7 +11,7 @@ const WEBSITELINK = process.env.NEXT_PUBLIC_WEBSITELINK;
 const ContactMeForm = () => {
     const { t, i18n } = useTranslation();
     const [data, setData] = useState({
-        name: "",
+        name: "", 
         email: "",
         text: ""
     });
