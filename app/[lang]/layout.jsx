@@ -1,13 +1,11 @@
-import { Geist, Geist_Mono, Vazirmatn } from "next/font/google";
+import { Geist, Vazirmatn } from "next/font/google";
 import "./globals.css";
 import Header from "@/Components/Layouts/Header";
-import Sidebase from "@/Components/Layouts/Sidebase";
 import I18Provider from "@/Contexts/I18Provider.jsx";
-import { GetTrans, locales } from "@/lib/server-i18n";
+import { GetTrans } from "@/lib/server-i18n";
 import IderkaouiToast from "@/Components/Global/MyToas";
-import GreatCursor, { HanleMouseMoveWindow } from "@/Components/Client/GreatCursor";
 import ChatProvider from "@/Contexts/ChatProvider";
-import BirdRandomTrip from "@/Components/Global/BirdRandomTrip";
+import { Analytics } from '@vercel/analytics/next';
 
 const MYUSERNAME = process.env?.MYUSERNAME;
 
@@ -58,21 +56,21 @@ export default async function RootLayout({ children, params }) {
       </head>
       <ChatProvider userName={MYUSERNAME}>
         {/* <GreatCursor lang={lang}> */}
-          <body className={` ${lang == 'ar' ? vazirmatn.className : geistSans.className} h-lvh selection:bg-foreground  selection:text-background`}      >
-            <IderkaouiToast />
-            {/* For the client side , i have  another function for the server side */}
-            <I18Provider>
-              {/* <BirdRandomTrip /> */}
-              {/* ------------ */}
-              <Header />
-              {/* <div className="max-h-[92vh] h-[92vh] pt-10 overflow-auto "> */}
-              <div className="  overflow-auto ">
-
-                {children}
-              </div>
-            </I18Provider>
-          </body>
-          {/* </GreatCursor> */}
+        <body className={` ${lang == 'ar' ? vazirmatn.className : geistSans.className} h-lvh selection:bg-foreground  selection:text-background`}      >
+          <IderkaouiToast />
+          {/* For the client side , i have  another function for the server side */}
+          <I18Provider>
+            {/* <BirdRandomTrip /> */}
+            {/* ------------ */}
+            <Header />
+            {/* <div className="max-h-[92vh] h-[92vh] pt-10 overflow-auto "> */}
+            <div className="  overflow-auto ">
+              <Analytics />
+              {children}
+            </div>
+          </I18Provider>
+        </body>
+        {/* </GreatCursor> */}
       </ChatProvider>
     </html>
   );
