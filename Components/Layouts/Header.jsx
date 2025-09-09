@@ -191,7 +191,9 @@ const Header = () => {
     let currentPahtName = pathName.split("/")[2] ?? "/";
     if (pathName.split("/")[3] == "chat") { currentPahtName = "contact-me/chat" }
     return (
-        <div className='w-full  px-3 flex  justify-between xl:justify-evenly items-center pt-2   '>
+        <div style={{
+            backdropFilter: "blur(8px)"
+        }} className='w-full sticky mb-10 top-0 left-0 z-[900] bg-background/60   px-3 flex  justify-between xl:justify-evenly items-center pt-2   '>
             <div className="xl:flex hidden  items-center justify-center gap-8">
                 <Link href={"/"}>
                     <Bulb />

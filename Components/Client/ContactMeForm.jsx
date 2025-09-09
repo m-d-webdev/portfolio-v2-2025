@@ -56,7 +56,7 @@ const ContactMeForm = () => {
         }
     }
     return (
-        <div className='border w-full max-w-[1000px] xl:w-[550px] mt-8 border-border rounded-2xl flex flex-col items-start justify-start '>
+        <div style={{backdropFilter:"blur(4px)"}} className='border z-[10] bg-background/70  w-full max-w-[1000px] xl:w-[550px] mt-8 border-border rounded-2xl flex flex-col items-start justify-start '>
             <div className="p-4 w-full flex flex-col gap-6 items-start justify-start ">
 
                 <Input
@@ -86,7 +86,7 @@ const ContactMeForm = () => {
                             data.email == "" ||
                             data.name == ""
                         )}
-                        variant={"default"} className={"w-full "}>
+                         className={"w-full  text-white !py-5 font-semibold bg-[#3600b4] "}>
                         {
                             isLoading
                                 ? <Spinner />

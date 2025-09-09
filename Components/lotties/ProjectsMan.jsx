@@ -1,8 +1,8 @@
 "use client";
-import React from 'react'
-import DelvpooerAnimatio from "./animations/Devlopper.json"
+
+import DelvpooerAnimatio from "./animations/Web Development.json"
 import Lottie from 'react-lottie'
-const Developer = () => {
+const ProjectsMan = ({ Speed = 1 }) => {
     return (
         <Lottie
             options={{
@@ -11,10 +11,10 @@ const Developer = () => {
                 autoplay: true,
             }}
             // width={600}
-            // height={400}
-            width={450}
+            height={300}
+            width={300}
         />
     )
 }
 
-export default Developer
+export default ProjectsMan

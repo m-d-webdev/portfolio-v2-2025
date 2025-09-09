@@ -41,7 +41,7 @@
         "follow_me": "Suivez-moi",
         "testimonials": "Voir les témoignages",
         "expore_projects": "Découvrez mes projets",
-        "open_all": "Ouvrir tout",
+        "open_all": "Tout voir",
         "start_chat": "Démarrer le chat",
         "live_chat": "Chat en direct"
     },
@@ -85,6 +85,9 @@
     "CONTACT":{
         "success": "E-mail envoyé avec succès !",
         "error": "Échec de l'envoi de l'e-mail. Veuillez réessayer."
+    },
+    "GLOBALEXPRNS":{
+        "INTRO":"Un aperçu de mon parcours d’apprentissage, de croissance et de réalisations professionnelles."
     },
     "EXPERINCE": 
     {
@@ -151,6 +154,7 @@
     },
     "PROJECTS": 
     {
+        "INTRO":"Découvrez mes travaux : des projets qui reflètent mon parcours de développeur",
         "PROBELM": "Le problème",
         "SOLUTION": "la solution",
         "KEYAWAYS": "Enseignements",

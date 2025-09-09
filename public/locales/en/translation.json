@@ -41,7 +41,7 @@
         "follow_me": "Follow Me",
         "testimonials": "See Testimonials",
         "expore_projects": "Explore My Projects",
-        "open_all": "Open all",
+        "open_all": "View all",
         "start_chat":"Start chat ",
         "live_chat": "Live Chat"
     },
@@ -82,6 +82,9 @@
     "CONTACT":{
          "success": "Email sent successfully!",
         "error": "Failed to send email. Please try again."
+    },
+    "GLOBALEXPRNS":{
+        "INTRO":"A glimpse into my journey of learning, growth, and professional achievements"
     },
     "EXPERINCE": 
     {
@@ -148,6 +151,7 @@
     },
     "PROJECTS": 
     {
+        "INTRO":"Discover my work: projects that highlight my journey as a developer",
         "PROBELM": "The problem",
         "SOLUTION": "the solution",
         "KEYAWAYS": "takeaways",

@@ -1,5 +1,6 @@
 import ContactMeForm from "@/Components/Client/ContactMeForm";
 import ButtonCopy from "@/Components/Global/ButtonCopy";
+import SendMail from "@/Components/lotties/SendMail";
 import { Button } from "@/Components/ui/button";
 import { GetTrans } from "@/lib/server-i18n";
 import { Copy, Linkedin, Mail, MessageSquareText, Phone, PhoneOff } from "lucide-react";
@@ -28,7 +29,7 @@ const page = async ({ params }) => {
               <path d="M1 97V76C99.1667 77.5 295.5 64.6 295.5 1C299.1 99.8 425.333 127.5 488 129V145.5" stroke="black" stroke-opacity="0.48" />
               <path d="M296 2C266.978 205.618 164.574 294.983 117 314.214V335" stroke="#858585" />
             </svg>
-      
+
 
             <div className="flex w-full px-7 mt-16 flex-col">
               <Mail className="text-red-500" />
@@ -81,7 +82,10 @@ const page = async ({ params }) => {
           </div>
 
         </div>
-        <div className="h-full w-full mt-10 xl:mt-0  xl:w-auto pt-10 items-end  justify-between flex flex-col  ">
+        <div className="h-full w-full  relative mt-10 pt-30 xl:mt-0  xl:w-auto items-end  justify-between flex flex-col  ">
+          <div className="absolute ltr:left-0 z-[1] top-0 ">
+            <SendMail />
+          </div>
           <ContactMeForm />
 
           <Link className={"px-8 flex w-full  justify-center items-center bg-background  gap-2 font-semibold border rounded-md p-3 "} href={"/contact-me/chat"}>

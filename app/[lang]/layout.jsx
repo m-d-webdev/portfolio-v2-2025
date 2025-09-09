@@ -7,6 +7,7 @@ import { GetTrans, locales } from "@/lib/server-i18n";
 import IderkaouiToast from "@/Components/Global/MyToas";
 import GreatCursor, { HanleMouseMoveWindow } from "@/Components/Client/GreatCursor";
 import ChatProvider from "@/Contexts/ChatProvider";
+import BirdRandomTrip from "@/Components/Global/BirdRandomTrip";
 
 const MYUSERNAME = process.env?.MYUSERNAME;
 
@@ -21,6 +22,15 @@ export const generateMetadata = async ({ params }) => {
     description: dict?.SEO?.HOME?.DESCRIPTION
   }
 }
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const vazirmatn = Vazirmatn({
+  subsets: ["arabic"],
+  weight: ["500"]
+});
 
 export default async function RootLayout({ children, params }) {
   const { lang } = await params
@@ -47,20 +57,22 @@ export default async function RootLayout({ children, params }) {
         />
       </head>
       <ChatProvider userName={MYUSERNAME}>
-        <GreatCursor lang={lang}>
-          {/* <body className={` ${lang == 'ar' ? vazirmatn.className : geistSans.className} h-lvh selection:bg-foreground  selection:text-background`}      > */}
-          <IderkaouiToast />
-          {/* For the client side , i have  another function for the server side */}
-          <I18Provider>
-            {/* ------------ */}
-            <Header />
-            <div className="max-h-[92vh] h-[92vh] pt-10 overflow-auto ">
+        {/* <GreatCursor lang={lang}> */}
+          <body className={` ${lang == 'ar' ? vazirmatn.className : geistSans.className} h-lvh selection:bg-foreground  selection:text-background`}      >
+            <IderkaouiToast />
+            {/* For the client side , i have  another function for the server side */}
+            <I18Provider>
+              {/* <BirdRandomTrip /> */}
+              {/* ------------ */}
+              <Header />
+              {/* <div className="max-h-[92vh] h-[92vh] pt-10 overflow-auto "> */}
+              <div className="  overflow-auto ">
 
-              {children}
-            </div>
-          </I18Provider>
-          {/* </body> */}
-        </GreatCursor>
+                {children}
+              </div>
+            </I18Provider>
+          </body>
+          {/* </GreatCursor> */}
       </ChatProvider>
     </html>
   );

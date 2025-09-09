@@ -1,4 +1,5 @@
 // import Developer from "@/Components/lotties/Developer";
+import Developer from "@/Components/lotties/Developer";
 import { Button } from "@/Components/ui/button";
 import { GetTrans } from "@/lib/server-i18n";
 import { FileUser, Phone } from "lucide-react";
@@ -23,8 +24,8 @@ export default async function Home({ params }) {
   const dict = GetTrans(lang);
 
   return (
-    <div className="  w-full    h-full flex xl:items-center items-start xl:justify-center justify-start">
-      <div className="w-full   xl:justify-center p-2 px-3 xl:p-0 flex flex-col items-center  h-full max-w-[1200px]">
+    <div className="  w-full     flex xl:items-center items-start xl:justify-center justify-start">
+      <div className="w-full   xl:justify-center p-2 px-3 xl:p-0 flex flex-col items-center   max-w-[1200px]">
         <div className="flex flex-col items-center xl:pt-10 pt-4  w-full">
           <div className="relative">
             <h1 className="xl:text-7xl text-5xl MyName font-secondary  text-center font-extrabold tracking-[-5px]">{dict?.HOME?.name}</h1>
@@ -39,56 +40,59 @@ export default async function Home({ params }) {
           </ul>
         </div>
 
-        {/* <div className="w-full  p-4  justify-between mt-20 gap-4 flex items-end"> */}
-        {/* <Developer /> */}
-        <div className=" p-4 mt-15  justify-center  gap-4 flex flex-wrap items-center">
-          <Button
-            size={"lg"}
-          >
-
-            <a
-              className="flex gap-1"
-              download={"Iderkaoui mustapha | full stack developer"}
-              href={"/media/Iderkaoui-mustapha-cv_v1.pdf"}
+        <div className="w-full   p-4  justify-evenly mt-20 gap-4 flex flex-col md:flex-row items-center">
+          <Developer />
+          <div className="md:w-[500]  p-4 mt-15  grid grid-cols-2  gap-4  items-center">
+            <Button
+              size={"lg"}
+              className={"w-full !py-5"}
             >
-              {
-                dict?.BUTTONS?.download_cv
-              }
-              <FileUser />
-            </a>
-          </Button>
-          <Button
-            size={"lg"}
 
-          >
+              <a
+                className="flex gap-1"
+                download={"Iderkaoui mustapha | full stack developer"}
+                href={"https://younitebucket.s3.eu-north-1.amazonaws.com/mustapha_iderkaoui_cv.pdf"}
+              >
+                {
+                  dict?.BUTTONS?.download_cv
+                }
+                <FileUser />
+              </a>
+            </Button>
+            <Button
+              size={"lg"}
+              className={"w-full !py-5"}
 
-            <Link
-              className="flex gap-1"
-              href={"/contact-me"}
             >
-              {
-                dict?.BUTTONS?.get_in_touch
-              }
-              <Phone />
-            </Link>
-          </Button>
-          <Button
-            size={"lg"}
-            variant={"default"}
-          >
 
-            <Link
-              className="flex gap-1"
-              href={"/my-projects"}
-              variant={"default"}>
-              {
-                dict?.BUTTONS?.expore_projects
-              }
-              <svg className={""} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" width={24} height={24} strokeWidth={1.5}> <path d="M11 19h-6a2 2 0 0 1 -2 -2v-11a2 2 0 0 1 2 -2h4l3 3h7a2 2 0 0 1 2 2v4"></path> <path d="M20 21l2 -2l-2 -2"></path> <path d="M17 17l-2 2l2 2"></path> </svg>
-            </Link>
-          </Button>
+              <Link
+                className="flex gap-1"
+                href={"/contact-me"}
+              >
+                {
+                  dict?.BUTTONS?.get_in_touch
+                }
+                <Phone />
+              </Link>
+            </Button>
+            <Button
+              size={"lg"}
+              variant={"default"}
+              className={"col-span-2 !py-5"}
+            >
+
+              <Link
+                className="flex gap-1"
+                href={"/my-projects"}
+                variant={"default"}>
+                {
+                  dict?.BUTTONS?.expore_projects
+                }
+                <svg className={""} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" width={24} height={24} strokeWidth={1.5}> <path d="M11 19h-6a2 2 0 0 1 -2 -2v-11a2 2 0 0 1 2 -2h4l3 3h7a2 2 0 0 1 2 2v4"></path> <path d="M20 21l2 -2l-2 -2"></path> <path d="M17 17l-2 2l2 2"></path> </svg>
+              </Link>
+            </Button>
+          </div>
         </div>
-        {/* </div> */}
       </div>
     </div>
   );
